@@ -1,0 +1,1 @@
+jq -r 'flatten | reverse | .[] | .author.username + ": " + .content + "\n" '  --color-output  $@ | less
